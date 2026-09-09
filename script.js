@@ -193,9 +193,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 كل عام وأنتِ أغلى كنوزي، وأجمل ما في حياتي.
 
-❤️ تحياتي لكِ يا لولتي.
+❤️ اتمني لكِ السعاده دوما يا لولتي.
 
-صديقك العزيز محمد.`;
+Your dear friend❤️.`;
 
     // 1. Click "ابدأ الحفل"
     startBtn.addEventListener('click', () => {

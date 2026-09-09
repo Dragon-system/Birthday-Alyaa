@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️عيد ميلاد سعيد يالولتيي ❤️</title>
+    <!-- Google Fonts: Cairo for elegant Arabic typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Canvas for Stars, Particles & Fireworks -->
+    <canvas id="canvas-bg"></canvas>
+
+    <!-- Background Music -->
+    <audio id="bg-music" src="birthday.mp3" preload="auto" loop></audio>
+
+    <!-- ==================== SCREEN 1: WELCOME SCREEN ==================== -->
+    <section id="welcome-screen" class="screen active">
+        <div class="welcome-content glass-card">
+            <div class="floating-icon">🎂</div>
+            <h1 class="main-title">عيد ميلاد سعيد يا علياء لوله</h1>
+            <div class="heart-pulse">❤️</div>
+            <p class="sub-title">اليوم هو أجمل يوم...<br>لأن عيد ميلاد أغلى شخص في حياتي.</p>
+            <button id="start-btn" class="glow-button">
+                <span>💖 ابدأ الحفل</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- ==================== SCREEN 2: CELEBRATION & GIFT SCREEN ==================== -->
+    <section id="celebration-screen" class="screen">
+        <div class="celebration-container">
+            <!-- Hidden initially, shown after celebration animation -->
+            <div id="gift-section" class="gift-section hidden">
+                <div class="gift-box-wrapper" id="gift-box">
+                    <div class="gift-lid"></div>
+                    <div class="gift-body">
+                        <div class="ribbon-vertical"></div>
+                        <div class="ribbon-horizontal"></div>
+                    </div>
+                    <div class="bow">🎁</div>
+                </div>
+                <button id="open-gift-btn" class="glow-button pulse-glow">
+                    <span>🎁 افتحي هديتك</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SCREEN 3: LETTER & FINAL SCREEN ==================== -->
+    <section id="letter-screen" class="screen">
+        <div class="letter-container glass-card">
+            <div class="letter-scroll">
+                <div id="typing-text" class="typing-content"></div>
+            </div>
+            <div id="final-finale" class="final-finale hidden">
+                <h2 class="finale-title">❤️  لوله ❤️</h2>
+                <p class="finale-subtitle">Happy Birthday<br>Forever Together ❤️</p>
+                <div class="signature">Made with ❤️ by Mohammed</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
